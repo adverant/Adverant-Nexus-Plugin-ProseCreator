@@ -1,0 +1,334 @@
+{
+  "name": "nexus-prosecreator",
+  "displayName": "ProseCreator - AI-Powered Novel & Prose Generation",
+  "version": "1.0.0",
+  "description": "Award-winning AI-powered creative writing platform. Write novels, screenplays, stage plays, comics, and more with multi-agent AI, living blueprints, and infinite memory architecture.",
+  "developer": {
+    "name": "Adverant",
+    "url": "https://adverant.ai",
+    "email": "plugins@adverant.ai",
+    "verified": true
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adverant/Adverant-Nexus-Plugin-ProseCreator"
+  },
+  "license": "Apache-2.0",
+  "keywords": [
+    "creative-writing",
+    "novel-generation",
+    "ai-writing",
+    "screenplay",
+    "prose",
+    "fiction",
+    "non-fiction",
+    "content-generation",
+    "storytelling"
+  ],
+  "nexus": {
+    "minVersion": "1.0.0",
+    "executionMode": "mcp_container",
+    "isolationLevel": 2,
+    "capabilities": [
+      "novel-generation",
+      "screenplay-writing",
+      "blueprint-creation",
+      "character-management",
+      "research-integration",
+      "continuity-analysis",
+      "multi-format-export",
+      "real-time-streaming"
+    ],
+    "permissions": [
+      "filesystem:temp",
+      "service:mageagent",
+      "service:graphrag",
+      "service:fileprocess"
+    ],
+    "entrypoint": "dist/index.js",
+    "healthCheck": "/prosecreator/api/health",
+    "readinessCheck": "/prosecreator/api/health/ready",
+    "livenessCheck": "/prosecreator/api/health/live"
+  },
+  "resources": {
+    "cpuMillicores": 2000,
+    "memoryMB": 4096,
+    "diskGB": 20,
+    "timeoutMs": 900000,
+    "maxConcurrentJobs": 10
+  },
+  "api": {
+    "version": "v1",
+    "basePath": "/prosecreator/api",
+    "endpoints": [
+      {
+        "method": "POST",
+        "path": "/projects",
+        "description": "Create new writing project",
+        "rateLimit": "20/minute"
+      },
+      {
+        "method": "GET",
+        "path": "/projects/:id",
+        "description": "Get project details"
+      },
+      {
+        "method": "POST",
+        "path": "/blueprints/series",
+        "description": "Generate series blueprint",
+        "rateLimit": "5/minute"
+      },
+      {
+        "method": "POST",
+        "path": "/blueprints/project",
+        "description": "Generate project blueprint",
+        "rateLimit": "10/minute"
+      },
+      {
+        "method": "POST",
+        "path": "/blueprints/chapter",
+        "description": "Generate chapter blueprint",
+        "rateLimit": "20/minute"
+      },
+      {
+        "method": "POST",
+        "path": "/generation/beat",
+        "description": "Generate single beat",
+        "rateLimit": "30/minute"
+      },
+      {
+        "method": "POST",
+        "path": "/generation/chapter",
+        "description": "Generate full chapter",
+        "rateLimit": "10/minute"
+      },
+      {
+        "method": "POST",
+        "path": "/characters",
+        "description": "Create character"
+      },
+      {
+        "method": "GET",
+        "path": "/characters/:project_id",
+        "description": "List project characters"
+      },
+      {
+        "method": "POST",
+        "path": "/research",
+        "description": "Generate research brief"
+      },
+      {
+        "method": "POST",
+        "path": "/analysis/continuity",
+        "description": "Run continuity check"
+      },
+      {
+        "method": "POST",
+        "path": "/analysis/plot-holes",
+        "description": "Detect plot holes"
+      }
+    ]
+  },
+  "pricing": {
+    "model": "hybrid",
+    "currency": "USD",
+    "tiers": [
+      {
+        "name": "free",
+        "displayName": "Free",
+        "priceMonthly": 0,
+        "priceYearly": 0,
+        "limits": {
+          "wordsPerMonth": 10000,
+          "maxProjects": 1,
+          "maxSeriesBooks": 0
+        },
+        "features": [
+          "novel-format",
+          "basic-humanization",
+          "markdown-export"
+        ]
+      },
+      {
+        "name": "author",
+        "displayName": "Author",
+        "priceMonthly": 4900,
+        "priceYearly": 49000,
+        "limits": {
+          "wordsPerMonth": 100000,
+          "maxProjects": 10,
+          "maxSeriesBooks": 3
+        },
+        "features": [
+          "novel-format",
+          "screenplay-format",
+          "standard-humanization",
+          "websocket-streaming",
+          "all-exports"
+        ]
+      },
+      {
+        "name": "professional",
+        "displayName": "Professional",
+        "priceMonthly": 14900,
+        "priceYearly": 149000,
+        "limits": {
+          "wordsPerMonth": 500000,
+          "maxProjects": 50,
+          "maxSeriesBooks": -1
+        },
+        "features": [
+          "all-formats",
+          "premium-humanization",
+          "websocket-streaming",
+          "priority-generation",
+          "all-exports"
+        ],
+        "popular": true
+      },
+      {
+        "name": "studio",
+        "displayName": "Studio",
+        "priceMonthly": 49900,
+        "priceYearly": 499000,
+        "limits": {
+          "wordsPerMonth": -1,
+          "maxProjects": -1,
+          "maxSeriesBooks": -1
+        },
+        "features": [
+          "everything",
+          "custom-style-training",
+          "white-label-export",
+          "priority-support",
+          "dedicated-resources"
+        ]
+      }
+    ],
+    "usage": {
+      "wordOverage": {
+        "unit": "1K words",
+        "priceCents": 50
+      },
+      "projectOverage": {
+        "unit": "project",
+        "priceCents": 500
+      }
+    }
+  },
+  "ui": {
+    "tier": 2,
+    "type": "template",
+    "capabilities": [
+      {
+        "type": "template",
+        "template": "project-wizard",
+        "config": {
+          "inputSchema": {
+            "type": "object",
+            "properties": {
+              "title": {
+                "type": "string",
+                "title": "Project Title"
+              },
+              "genre": {
+                "type": "string",
+                "title": "Genre",
+                "enum": ["fantasy", "sci-fi", "romance", "thriller", "mystery", "literary", "horror", "historical"]
+              },
+              "format": {
+                "type": "string",
+                "title": "Format",
+                "enum": ["novel", "screenplay", "stage_play", "comic_book", "poetry", "non_fiction"]
+              },
+              "target_word_count": {
+                "type": "number",
+                "title": "Target Word Count",
+                "default": 80000
+              }
+            },
+            "required": ["title", "genre", "format"]
+          },
+          "submitEndpoint": "/prosecreator/api/projects"
+        }
+      },
+      {
+        "type": "template",
+        "template": "writing-editor",
+        "config": {
+          "sections": ["blueprint", "chapters", "characters", "research"],
+          "streamingEnabled": true
+        }
+      }
+    ],
+    "navigation": {
+      "location": "dedicated-tab",
+      "icon": "book-open",
+      "label": "ProseCreator"
+    }
+  },
+  "marketplace": {
+    "category": "content-creation",
+    "subcategory": "creative-writing",
+    "tags": [
+      "novel-writing",
+      "ai-author",
+      "screenplay",
+      "creative-writing",
+      "fiction",
+      "content-generation",
+      "storytelling"
+    ],
+    "featured": true,
+    "screenshots": [
+      {
+        "url": "/assets/screenshots/project-overview.png",
+        "title": "Project Overview",
+        "description": "Manage your novels and creative projects"
+      },
+      {
+        "url": "/assets/screenshots/blueprint-view.png",
+        "title": "Living Blueprint",
+        "description": "Self-evolving story blueprints"
+      },
+      {
+        "url": "/assets/screenshots/generation-stream.png",
+        "title": "Real-Time Generation",
+        "description": "Watch your story come to life"
+      },
+      {
+        "url": "/assets/screenshots/character-bible.png",
+        "title": "Character Bible",
+        "description": "Deep character management"
+      }
+    ],
+    "documentation": "https://docs.adverant.ai/plugins/prosecreator",
+    "changelog": "https://github.com/adverant/Adverant-Nexus-Plugin-ProseCreator/blob/main/CHANGELOG.md",
+    "support": {
+      "email": "support@adverant.ai",
+      "docs": "https://docs.adverant.ai/plugins/prosecreator",
+      "chat": "https://discord.gg/adverant"
+    }
+  },
+  "integrations": {
+    "required": [
+      {
+        "service": "mageagent",
+        "minVersion": "1.0.0",
+        "purpose": "Multi-agent AI orchestration for content generation"
+      },
+      {
+        "service": "graphrag",
+        "minVersion": "1.0.0",
+        "purpose": "Infinite memory and knowledge graph"
+      }
+    ],
+    "optional": [
+      {
+        "service": "fileprocess",
+        "minVersion": "1.0.0",
+        "purpose": "Multi-format export (PDF, EPUB, DOCX)"
+      }
+    ]
+  }
+}

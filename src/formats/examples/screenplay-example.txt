@@ -1,0 +1,122 @@
+================================================================================
+EXAMPLE: FORMATTED SCREENPLAY OUTPUT
+================================================================================
+
+TITLE PAGE:
+-----------
+
+                        THE GREAT ADVENTURE
+
+
+                           Written by
+
+                            Jane Doe
+
+
+                      Draft Date: November 14, 2024
+
+--------------------------------------------------------------------------------
+
+SCENE 1:
+
+INT. COFFEE SHOP - DAY
+
+JANE enters the busy coffee shop, scanning the room for a familiar
+face. She clutches her phone nervously, checking the time.
+
+                         JANE
+          Has anyone seen my laptop? I left
+          it here fifteen minutes ago.
+
+The BARISTA looks up from behind the counter.
+
+                        BARISTA
+               (apologetic)
+          Sorry, I haven't seen anything.
+          Have you checked with the manager?
+
+JANE nods and heads toward the back of the shop.
+
+                                                              CUT TO:
+
+INT. COFFEE SHOP - MANAGER'S OFFICE - CONTINUOUS
+
+JANE knocks on the door. The MANAGER, a middle-aged woman with kind
+eyes, opens it.
+
+                        MANAGER
+          Can I help you?
+
+                         JANE
+          My laptop... I think someone took it.
+
+                        MANAGER
+               (concerned)
+          Let me check our security footage.
+
+The MANAGER turns to her computer screen.
+
+                                                         FADE TO BLACK.
+
+--------------------------------------------------------------------------------
+
+FORMATTING SPECIFICATIONS:
+-------------------------
+
+Font: Courier 12pt
+Page Size: US Letter (8.5" x 11")
+Margins:
+  - Left: 1.5"
+  - Right: 1.0"
+  - Top: 1.0"
+  - Bottom: 1.0"
+
+Element Positions (from left edge):
+  - Scene Heading: 1.5"
+  - Action: 1.5" (max width 6.0")
+  - Character Name: 3.7"
+  - Parenthetical: 3.1"
+  - Dialogue: 2.5" (max width 3.5")
+  - Transition: 6.0" (right-aligned)
+
+Page Count: 2 pages
+Estimated Runtime: 2 minutes
+Scene Count: 2
+Dialogue Percentage: 60%
+Action Percentage: 40%
+
+CHARACTER APPEARANCES:
+----------------------
+JANE - 6 dialogue lines, 2 scenes
+BARISTA - 1 dialogue line, 1 scene
+MANAGER - 2 dialogue lines, 1 scene
+
+LOCATION BREAKDOWN:
+-------------------
+INT. COFFEE SHOP - 1 scene
+INT. COFFEE SHOP - MANAGER'S OFFICE - 1 scene
+
+ACT STRUCTURE:
+--------------
+Act 1 (pages 1-0.5): Setup
+Act 2 (pages 0.5-1.5): Confrontation
+Act 3 (pages 1.5-2): Resolution
+
+================================================================================
+
+EXPORT FORMATS AVAILABLE:
+-------------------------
+
+1. FOUNTAIN (.fountain)
+   Plain-text markup format compatible with all major screenwriting software
+
+2. FINAL DRAFT (.fdx)
+   Industry-standard XML format for Final Draft software
+
+3. HTML (.html)
+   Web-ready format with embedded CSS styling
+
+4. PDF (.pdf)
+   Print-ready format with proper pagination
+
+================================================================================

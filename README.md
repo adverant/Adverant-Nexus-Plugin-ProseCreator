@@ -9,7 +9,7 @@
   <a href="https://github.com/adverant/Adverant-Nexus-Plugin-ProseCreator/actions"><img src="https://github.com/adverant/Adverant-Nexus-Plugin-ProseCreator/workflows/CI/badge.svg" alt="CI Status"></a>
   <a href="https://github.com/adverant/Adverant-Nexus-Plugin-ProseCreator/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-Apache%202.0-blue.svg" alt="License"></a>
   <a href="https://marketplace.adverant.ai/plugins/prosecreator"><img src="https://img.shields.io/badge/Nexus-Marketplace-purple.svg" alt="Nexus Marketplace"></a>
-  <a href="https://discord.gg/adverant"><img src="https://img.shields.io/discord/123456789?color=7289da&label=Discord" alt="Discord"></a>
+  <a href="https://discord.gg/adverant"><img src="https://img.shields.io/badge/Discord-Community-7289da.svg" alt="Discord"></a>
 </p>
 
 <p align="center">
@@ -24,7 +24,7 @@
 
 ## Write Your Best-Selling Novel with AI
 
-**ProseCreator** is an award-winning Nexus Marketplace plugin that helps authors write fiction, non-fiction, and creative content at unprecedented speed and quality. Whether you're crafting your first novel or your fiftieth, ProseCreator's multi-agent AI system ensures every page captivates your readers.
+**ProseCreator** is a Nexus Marketplace plugin that helps authors write fiction, non-fiction, and creative content with AI assistance. Whether you're crafting your first novel or your fiftieth, ProseCreator's multi-agent AI system ensures every page captivates your readers.
 
 ### Why Authors Choose ProseCreator
 

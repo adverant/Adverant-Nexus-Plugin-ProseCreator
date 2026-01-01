@@ -1,6 +1,6 @@
 /**
  * MageAgent Integration Layer - Entry Point
- * NexusProseCreator - Award-Winning Creative Writing Microservice
+ * NexusProseCreator - AI-Powered Creative Writing Microservice
  *
  * This module provides the complete multi-agent orchestration system
  * for creative writing tasks, supporting 50+ specialized AI agents.

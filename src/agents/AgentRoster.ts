@@ -1,6 +1,6 @@
 /**
  * Agent Roster - 50+ Specialized AI Agents for Creative Writing
- * NexusProseCreator - Award-Winning Content Generation
+ * NexusProseCreator - AI-Powered Content Generation
  *
  * Each agent is a specialized persona designed for specific creative tasks
  */

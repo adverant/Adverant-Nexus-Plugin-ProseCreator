@@ -137,8 +137,8 @@ class NovelProductionWorkflow {
 
 ### Business Impact
 
-- **Complete novels in 2-4 weeks** instead of months
-- **Zero plot holes** with continuous analysis
+- **Faster manuscript completion** with AI assistance
+- **Reduced plot inconsistencies** with continuous analysis
 - **Consistent characters** throughout the story
 - **Publication-ready manuscripts** with proper formatting
 
@@ -535,7 +535,7 @@ class NonFictionProduction:
 
 ### Business Impact
 
-- **60% reduction in research time** with AI-assisted research briefs
+- **Reduced research time** with AI-assisted research briefs
 - **Automatic citations** in multiple formats
 - **Fact-checking integration** catches errors before publication
 - **Maintains engaging tone** while being accurate
@@ -691,10 +691,10 @@ class RapidSeriesProduction {
 
 ### Business Impact
 
-- **12+ books per year** production capacity
+- **Increased book output** with AI-assisted production
 - **Consistent quality** across all books
-- **Perfect series continuity** maintained automatically
-- **Scalable publishing business** with predictable output
+- **Series continuity** maintained automatically
+- **Scalable publishing workflow** with predictable output
 
 ---
 

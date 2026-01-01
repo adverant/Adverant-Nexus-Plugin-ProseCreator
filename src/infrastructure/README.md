@@ -1,6 +1,6 @@
 # NexusProseCreator Qdrant Infrastructure
 
-**Production-ready vector database infrastructure for award-winning creative content generation**
+**Production-ready vector database infrastructure for creative content generation**
 
 ## Overview
 

@@ -11,7 +11,7 @@ import routes from './routes';
 
 /**
  * NexusProseCreator API Server
- * Award-Winning Creative Content Generation Microservice
+ * Creative Content Generation Microservice
  */
 class ProseCreatorServer {
   private app: Express;
